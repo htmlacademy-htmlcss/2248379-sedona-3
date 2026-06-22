@@ -1,0 +1,458 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #f2f2f2;
+  min-width: 1280px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-header {
+  color: #000000;
+  }
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/*ссылка Хочу сюда*/
+.header-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  text-align: center;
+}
+
+/*число отелей*/
+.notification-badge {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  text-align: center;
+}
+
+/*Welcome to the gorgeous Sedona*/
+.hero {
+  background-color: #d9eaf2;
+  background-image: url("../images/hero-border.svg"), url("../images/background.jpg");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+}
+
+.hero-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*Седона - небольшой городок в Аризоне, заслуживающий большего*/
+.lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Преимущества-заголовки*/
+.advantages-list-title {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-description {
+  color: #000000;
+  text-align: center;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-dark {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.infrastructure-lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.infrastructure-lead-text {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
+.infrastructure-item {
+  width: 230px;
+  padding: 181px 85px 81px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.infrastructure-item:nth-child(2n) {
+  background-color: #82b3d3;
+}
+
+.infrastructure-item-home {
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+}
+
+.infrastructure-item-meal {
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+}
+
+.infrastructure-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.infrastructure-description {
+  color: #333333;
+  text-align: center;
+}
+
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.search-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+}
+
+.subscribe {
+  text-align: center;
+}
+
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-theme-custom {
+  color: #ffffff;
+  background-color: #8daab8;
+  background-image: url("../images/background-subscribe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscribe-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #82b3d3;
+  text-align: center;
+}
+
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.copyright {
+  width: 115px;
+  color: #000000;
+}
+
+.main-inner-header {
+  background-color: #87a4c4;
+  background-image: url("../images/background-filters.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #333333;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  background-image: url("../images/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-home-link {
+  background-image: url("../images/home.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+/*кнопка Применить*/
+.catalog-filter-submit {
+  width: 190px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #82b3d3;
+}
+
+/*кнопка Сбросить*/
+.catalog-filter-reset {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+}
+
+/*Найдено гостиниц:*/
+.catalog-products-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
+.select-control {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+
+.view-button {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.view-button-current {
+  border-color: #000000;
+}
+
+.view-button-tile {
+  background-image: url("../images/table.svg");
+}
+
+.view-button-card {
+  background-image: url("../images/card.svg");
+}
+
+.view-button-list {
+  background-image: url("../images/list.svg");
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-card-image {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.product-card-type {
+  margin: 0;
+}
+
+.product-card-price {
+  margin: 0;
+  text-align: right;
+}
+
+.product-card-stars {
+  background-image: url("../images/star.svg");
+  background-repeat: space no-repeat;
+}
+
+.product-card-stars-2 {
+  width: 42px;
+}
+
+.product-card-stars-3 {
+  width: 66px;
+}
+
+.product-card-stars-4 {
+  width: 89px;
+}
+
+.product-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.product-card-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  text-align: center;
+}
+
+.add-favorite-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #82b3d3;
+  text-align: center;
+}
+
+.favorite-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #7db54f;
+  text-align: center;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82b3d3;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
