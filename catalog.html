@@ -12,38 +12,36 @@
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
-        <div class="page-header-container">
-          <nav class="navigation">
-            <a class="navigation-logo" href="index.html">
-              <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
-            </a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">О Седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
-              </li>
-            </ul>
-            <ul class="navigation-user">
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-link-search" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-link-favorite" href="#">
-                  <span class="visually-hidden">Избранное</span>
-                  <span class="notification-badge">12</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a class="header-button" href="#">Хочу сюда!</a>
-        </div>
+        <nav class="navigation">
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-link-search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-link-favorite" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="notification-badge">12</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header-button" href="#">Хочу сюда!</a>
       </header>
 
       <main class="main-container main-inner" data-test="main">
@@ -70,22 +68,19 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
-                      <span class="control-mark"></span>
+                      <input class="control-mark control-input" type="checkbox" name="pool" checked>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
-                      <span class="control-mark"></span>
+                      <input class="control-mark control-input" type="checkbox" name="parking" checked>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="wifi">
-                      <span class="control-mark"></span>
+                      <input class="control-mark control-input" type="checkbox" name="wifi">
                       <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -96,23 +91,20 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel"
+                      <input class="control-mark control-input" type="radio" name="housing-type" value="hotel"
                         checked>
-                      <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel">
-                      <span class="control-mark"></span>
+                      <input class="control-mark control-input" type="radio" name="housing-type" value="motel">
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
-                      <span class="control-mark"></span>
+                      <input class="control-mark control-input" type="radio" name="housing-type" value="apartments">
                       <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
@@ -156,13 +148,11 @@
           <div class="catalog-products-container">
             <div class="catalog-products-header">
               <h2 class="catalog-products-title">Найдено гостиниц: <span>38</span></h2>
-              <div class="select sorting-type">
                 <select class="select-control" aria-label="Сортировка">
                   <option value="popular">Сначала популярные</option>
                   <option value="cheap" selected>Сначала дешёвые</option>
                   <option value="expensive">Сначала дорогие</option>
                 </select>
-              </div>
 
               <ul class="view-buttons">
                 <li class="view-button-item">
@@ -193,7 +183,7 @@
                 <p class="product-card-type">Гостиница</p>
                 <p class="product-card-price">От 4000 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="add-favorite-button" href="#">В избранное</a>
+                <button  class="add-favorite-button" type="submit">В избранное</button>
                 <p class="product-card-stars product-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
                 <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
               </li>
@@ -206,7 +196,7 @@
                 <p class="product-card-type">Гостиница</p>
                 <p class="product-card-price">От 5000 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="favorite-button" href="#">В избранном</a>
+                <button  class="favorite-button" type="submit">В избранном</button>
                 <p class="product-card-stars product-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
                 <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
               </li>
@@ -219,7 +209,7 @@
                 <p class="product-card-type">Гостиница</p>
                 <p class="product-card-price">От 2500 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="add-favorite-button" href="#">В избранное</a>
+                <button  class="add-favorite-button" type="submit">В избранное</button>
                 <p class="product-card-stars product-card-stars-3"><span class="visually-hidden">3 звезды</span></p>
                 <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
               </li>
@@ -232,7 +222,7 @@
                 <p class="product-card-type">Гостиница</p>
                 <p class="product-card-price">От 1500 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="add-favorite-button" href="#">В избранное</a>
+                <button  class="add-favorite-button" type="submit">В избранное</button>
                 <p class="product-card-stars product-card-stars-2"><span class="visually-hidden">2 звезды</span></p>
                 <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
               </li>
