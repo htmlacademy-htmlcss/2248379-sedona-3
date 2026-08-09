@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Савельев](https://up.htmlacademy.ru/htmlcss-individual/3/user/2248379).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+* Сайт: [проект "Седона"](https://asv-root.github.io/2248379-sedona-3/)
 
 ---
 
