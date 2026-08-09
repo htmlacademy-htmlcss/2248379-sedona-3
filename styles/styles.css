@@ -134,6 +134,10 @@ img {
   text-decoration: none;
 }
 
+.navigation-user-link:hover {
+  background-color: rgba(117, 97, 87, 0.1);
+}
+
 .navigation-user-link-search {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
@@ -711,9 +715,8 @@ img {
   color: #000000;
 }
 
-.copyright img {
+.copyright svg {
   display: block;
-  margin-left: auto;
 }
 
 .copyright:hover {
@@ -811,14 +814,26 @@ img {
 }
 
 .catalog-filter-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
   margin: 0;
   padding: 0;
-  border: none;
+  max-width: 200px;
 }
 
 .catalog-filter-group:nth-child(3) {
   margin-left: auto;
 }
+
+.catalog-filter-group input[type="number"] {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 
 .catalog-filter-group:last-child {
   margin-right: 0;
@@ -841,7 +856,37 @@ img {
 }
 
 .catalog-filter-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
   margin-bottom: 16px;
+}
+
+.catalog-filter-item:has(input[type="checkbox"]:checked)::before {
+  display: block;
+}
+
+.catalog-filter-item:has(input:disabled) {
+  color: rgb(169, 169, 169);
+}
+
+.catalog-filter-item:has(input[type="radio"]:checked)::before {
+  display: block;
+}
+
+.catalog-filter-item:has(input:disabled) input {
+  background-color: rgb(169, 169, 169);
+}
+
+.catalog-filter-item:not(:has(input:disabled)):active {
+  opacity: 30%;
+}
+
+.catalog-filter-item:not(:has(input:disabled)):hover {
+  opacity: 60%;
 }
 
 .control {
@@ -860,6 +905,7 @@ img {
   color: #000000;
   background-color: #ffffff;
   margin: 0;
+  appearance: none;
 }
 
 .control:hover {
@@ -885,24 +931,21 @@ img {
   opacity: 0.3;
 }
 
-.control-input:disabled ~ .control-mark {
-  opacity: 0.3;
-}
-
 .control-input:disabled ~ .control-label {
   opacity: 0.3;
 }
 
- .control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 5px;
   left: 4px;
   width: 13px;
   height: 10px;
-  background-image: url("../images/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  mask-image: url("../images/tick.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: #000000;
   content: "";
 }
 
@@ -917,9 +960,9 @@ img {
   left: 5px;
   width: 10px;
   height: 10px;
-  background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+  background-color: #000000;
 }
 
 .control-label {
@@ -968,7 +1011,6 @@ img {
     outline: 3px solid #83b3d3;
   }
 }
-
 
 
 .toggle-min {
@@ -1056,8 +1098,6 @@ img {
 }
 
 
-
-
 /*кнопка Применить*/
 .catalog-filter-submit {
   width: 190px;
@@ -1102,9 +1142,6 @@ img {
   background-color: #e5e5e5;
   color: #ffffff;
 }
-
-
-
 
 /*кнопка Сбросить*/
 .catalog-filter-reset {
@@ -1287,7 +1324,7 @@ img {
 .product-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 212 1fr auto auto auto;
+  grid-template-rows: 212 1fr auto;
   gap: 16px 20px;
   width: 340px;
   padding: 20px;
@@ -1297,6 +1334,12 @@ img {
   box-sizing: border-box;
 }
 
+.product-info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+  align-content: end;
+}
 
 .product-card-link {
   grid-column: 1 / -1;
@@ -1328,6 +1371,7 @@ img {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  grid-column: 1/-1;
 }
 
 .product-card-image {

@@ -68,19 +68,22 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-mark control-input" type="checkbox" name="pool" checked>
+                      <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-mark control-input" type="checkbox" name="parking" checked>
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-mark control-input" type="checkbox" name="wifi">
+                      <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                      <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -91,20 +94,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-mark control-input" type="radio" name="housing-type" value="hotel"
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel"
                         checked>
+                      <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-mark control-input" type="radio" name="housing-type" value="motel">
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel">
+                      <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-mark control-input" type="radio" name="housing-type" value="apartments">
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
+                      <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
@@ -148,11 +154,11 @@
           <div class="catalog-products-container">
             <div class="catalog-products-header">
               <h2 class="catalog-products-title">Найдено гостиниц: <span>38</span></h2>
-                <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала популярные</option>
-                  <option value="cheap" selected>Сначала дешёвые</option>
-                  <option value="expensive">Сначала дорогие</option>
-                </select>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap" selected>Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
 
               <ul class="view-buttons">
                 <li class="view-button-item">
@@ -175,56 +181,72 @@
 
             <ul class="product-list">
               <li class="product-card">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link" href="#" tabindex="-1">
                   <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="211"
                     alt="Звёздное небо в расщелине гор.">
+                </a>
+                <a class="product-card-link" href="#" tabindex="-1">
                   <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
-                <p class="product-card-type">Гостиница</p>
-                <p class="product-card-price">От 4000 ₽</p>
-                <a class="product-card-button" href="#">Подробнее</a>
-                <button  class="add-favorite-button" type="submit">В избранное</button>
-                <p class="product-card-stars product-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
-                <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
+                <div class="product-info-wrapper">
+                  <p class="product-card-type">Гостиница</p>
+                  <p class="product-card-price">От 4000 ₽</p>
+                  <a class="product-card-button" href="#">Подробнее</a>
+                  <button class="add-favorite-button" type="button">В избранное</button>
+                  <p class="product-card-stars product-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
+                  <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
+                </div>
               </li>
               <li class="product-card">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link" href="#" tabindex="-1">
                   <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300" height="211"
                     alt="Радуга над горным хребтом.">
+                </a>
+                <a class="product-card-link" href="#" tabindex="-1">
                   <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
-                <p class="product-card-type">Гостиница</p>
-                <p class="product-card-price">От 5000 ₽</p>
-                <a class="product-card-button" href="#">Подробнее</a>
-                <button  class="favorite-button" type="submit">В избранном</button>
-                <p class="product-card-stars product-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
-                <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
+                <div class="product-info-wrapper">
+                  <p class="product-card-type">Гостиница</p>
+                  <p class="product-card-price">От 5000 ₽</p>
+                  <a class="product-card-button" href="#">Подробнее</a>
+                  <button class="favorite-button" type="button">В избранном</button>
+                  <p class="product-card-stars product-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
+                  <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
+                </div>
               </li>
               <li class="product-card">
-                <a class="product-card-link" href="#l">
+                <a class="product-card-link" href="#l" tabindex="-1">
                   <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300" height="211"
                     alt="Горы на фоне голубого неба.">
+                </a>
+                <a class="product-card-link" href="#" tabindex="-1">
                   <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
-                <p class="product-card-type">Гостиница</p>
-                <p class="product-card-price">От 2500 ₽</p>
-                <a class="product-card-button" href="#">Подробнее</a>
-                <button  class="add-favorite-button" type="submit">В избранное</button>
-                <p class="product-card-stars product-card-stars-3"><span class="visually-hidden">3 звезды</span></p>
-                <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
+                <div class="product-info-wrapper">
+                  <p class="product-card-type">Гостиница</p>
+                  <p class="product-card-price">От 2500 ₽</p>
+                  <a class="product-card-button" href="#">Подробнее</a>
+                  <button class="add-favorite-button" type="button">В избранное</button>
+                  <p class="product-card-stars product-card-stars-3"><span class="visually-hidden">3 звезды</span></p>
+                  <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
+                </div>
               </li>
               <li class="product-card">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link" href="#" tabindex="-1">
                   <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300" height="211"
                     alt="Гора на фоне звёздного неба.">
+                </a>
+                <a class="product-card-link" href="#" tabindex="-1">
                   <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
-                <p class="product-card-type">Гостиница</p>
-                <p class="product-card-price">От 1500 ₽</p>
-                <a class="product-card-button" href="#">Подробнее</a>
-                <button  class="add-favorite-button" type="submit">В избранное</button>
-                <p class="product-card-stars product-card-stars-2"><span class="visually-hidden">2 звезды</span></p>
-                <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
+                <div class="product-info-wrapper">
+                  <p class="product-card-type">Гостиница</p>
+                  <p class="product-card-price">От 1500 ₽</p>
+                  <a class="product-card-button" href="#">Подробнее</a>
+                  <button class="add-favorite-button" type="button">В избранное</button>
+                  <p class="product-card-stars product-card-stars-2"><span class="visually-hidden">2 звезды</span></p>
+                  <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
+                </div>
               </li>
             </ul>
 
@@ -299,8 +321,10 @@
           </ul>
           <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="copyright" href="https://htmlacademy.ru/">
-            <img class="htmlacademy-logo" src="images/htmlacademy.svg" width="115" height="33"
-              alt="Логотип HTML Academy">
+            <svg width="115" height="33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 13.4V16h2.5v-2.6H0ZM11.6 5C10 5 8.8 5.7 8 6.7h-.1V.5h-2V16h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2V16h2V9.9c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.3h-4.8V1.6h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.3h4.8v-2ZM41.1 5.1c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V5.3H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5C35.1 7 36 8 36 9.6v6.3h2v-5.6C38 7.9 39.4 7 40.6 7 42.1 7 43 8 43 9.6v6.3h2V9.4c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.2c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.5h-2v12.7ZM28.9 20.2c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.7h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.5c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.2c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.7h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.9h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.4c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.4c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.5l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
+            </svg>
           </a>
         </div>
       </footer>
