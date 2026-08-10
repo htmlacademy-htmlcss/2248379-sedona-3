@@ -166,6 +166,10 @@ img {
   background-color: rgba(117, 97, 87, 0.1);
 }
 
+.navigation-user-link:active {
+  background-color: rgba(138, 50, 6, 0.3);
+}
+
 .navigation-user-link-search {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
@@ -334,7 +338,7 @@ img {
 }
 
 .advantages-item-container {
-  width: 230px;
+  width: 240px;
   min-height: 203px;
   display: flex;
   flex-direction: column;
@@ -658,9 +662,7 @@ img {
 .page-footer-container {
   display: flex;
   align-items: center;
-  padding-top: 40px;
   padding-right: 70px;
-  padding-bottom: 30px;
   padding-left: 70px;
 }
 
@@ -795,14 +797,18 @@ img {
 
 .main-inner-header {
   padding-top: 35px;
-  padding-bottom: 70px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-bottom: 55px;
   background-color: #87a4c4;
   background-image: url("../images/background-filters.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.main-inner-header-container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 
 .inner-header-title {
   margin-top: 0;
@@ -1055,6 +1061,17 @@ img {
   border: none;
   cursor: pointer;
 }
+
+.range-toggle:hover {
+  cursor: col-resize;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid rgba(131, 179, 211, 1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
 
 .range-toggle:focus-visible {
   outline: 3px solid #83b3d3;
@@ -1420,7 +1437,6 @@ img {
 
 
 .product-card-title {
-  display: inline-block;
   margin: 0;
   font-size: 24px;
   line-height: 28px;
@@ -1430,7 +1446,6 @@ img {
 
 .product-card-image {
   display: block;
-  margin-bottom: 16px;
 }
 
 .product-card-type {
