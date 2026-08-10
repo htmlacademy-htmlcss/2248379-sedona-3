@@ -73,6 +73,19 @@ img {
   margin-bottom: -6px;
 }
 
+.navigation-logo:hover {
+  opacity: 0.6;
+}
+
+.navigation-logo:focus-visible {
+  opacity: 0.6;
+  outline: var(--browser-outline);
+}
+
+.navigation-logo:active {
+  opacity: 0.3;
+}
+
 .page-header-logo {
   display: block;
 }
@@ -106,6 +119,21 @@ img {
   color: #000000;
   text-decoration: none;
 }
+
+.navigation-link[href]:hover {
+  color: #515c79;
+}
+
+.navigation-link[href]:focus-visible {
+  color: #3e589e;
+  outline: 3px solid #4f5f8d;
+}
+
+.navigation-link[href]:active {
+  opacity: 0.3;
+}
+
+
 
 .navigation-link-current {
   position: relative;
@@ -653,10 +681,36 @@ img {
   align-items: center;
   width: 47px;
   height: 40px;
-  color: #83B3D3;
+  color: #83b3d3;
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+.footer-social-link::before {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.social-link-vk::before {
+  mask-image: url("../images/vk.svg");
+  mask-size: 24px 14px;
+}
+
+.social-link-tg::before {
+  mask-image: url("../images/telegram.svg");
+  mask-size: 18px 16px;
+}
+
+.social-link-youtube::before {
+  mask-image: url("../images/youtube.svg");
+  mask-size: 27px 17px;
 }
 
 /* состояния ссылок на соцсети */
@@ -1961,8 +2015,9 @@ img {
   pointer-events: none;
 }
 
+
 .number-field {
-  padding: 14px 10px 14px 10px;
+  padding: 14px 5px 14px 5px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -1971,6 +2026,7 @@ img {
   border: none;
   background-color: transparent;
   appearance: textfield;
+  text-align: center;
 }
 
 .number-field::-webkit-outer-spin-button,
